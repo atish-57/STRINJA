@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strinja</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="testimonials.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+    jQuery(document).ready(function($) {
+    "use strict";
+    //  TESTIMONIALS CAROUSEL HOOK
+    $('#customers-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots:true,
+        autoplayTimeout: 4500,
+        smartSpeed: 450,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1170: {
+            items: 3
+          }
+        }
+    });
+});
+    </script>
+    <style>
+        .logo {
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+
+</html>
+
+<body>
+
+    <!--Header section -->
+
+    <div class="header ">
+      <div class="container">
+      <a href="index.html" class="logo"><img src="logo.png" alt="logo" height="60px" width="60px"></a>
+      <div class="header-right">
+        <a href="index.html">Home</a>
+        <a href="gallery1.html">Gallery</a>
+        <a href="conatctus.html">Contact </a>
+        <a href="about_us.html">About Us</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    </div>
+    <script>
+    function toggleMenu() {
+      var menu = document.querySelector('.header-right');
+      var hamburger = document.querySelector('.hamburger');
+    
+      menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+      hamburger.classList.toggle('active');
+    }
+    </script>
+        
+        <iframe src="carousel.html" width="100%" height="680px" frameborder="0" ></iframe>
+ 
+    <!--header ending-->
+    
+
+
+
+
+
+
+    <!--content showcase-->
+
+    <body id="hello2">
+        <header class="container" id="art">
+          <div class="faq-header container" style="text-align: center !important;" style="margin-top: 100px !important;">Art Collection </div>
+            <hr>
+        </header>
+
+        <div class="wrapper container" id="hello">
+
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="itiscard">
+                <img src="IMG-20231226-WA0013.jpg" alt="img" draggable="false">
+                <img src="IMG-20231226-WA0016.jpg" alt="img" draggable="false">
+                <img src="IMG-20231226-WA0006.jpg" alt="img" draggable="false">
+                <img src="IMG-20231230-WA0009.jpg" alt="img" draggable="false">
+                <img src="IMG-20231230-WA0015.jpg" alt="img" draggable="false">
+                <img src="IMG-20231226-WA0015.jpg" alt="img" draggable="false">
+
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </body>
+
+
+    <div class="faq-header container" style="text-align: center !important;" style="margin-top: 100px !important;">Our Customers </div>
+        <!-- TESTIMONIALS -->
+        
+<section class="testimonials">
+	<div class="container">
+    <hr>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="naman.jpeg" alt="">
+                <p>I just love the art piece that i got from strinja . It was a potrait of my father and has a special place in my heart. I would give 5/5 stars. to strinja</p>
+              </div>
+              <div class="testimonial-name">NAMAN OMAR</div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="krishna.jpeg" alt="">
+                <p>I am a big fan of anime . I ordered a potrait of luffy from strinja. It got delivered two days ago. I am in love with potrait.</p>
+              </div>
+              <div class="testimonial-name">KRISHNA PRATAP</div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="atish.png" alt="">
+                <p>I love the tv series peaky blinders. After visiting the strinja website i oredered one potrait of Thomas Shelby. It was awesome.</p>
+              </div>
+              <div class="testimonial-name">ATISH RANJAN</div>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+            <!--TESTIMONIAL 4 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="hritick.jpeg" alt="">
+                <p>I like the handmade art having indian cultural refrences. I ordered one from strinja. It was good. I would like to appreciate strinja for promoting handmade art and empowering women.</p>
+              </div>
+              <div class="testimonial-name">HRITICK KUMAR</div>
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
+
+
+
+<div class="faq-header container" style="text-align: center !important;">Frequently Asked Questions </div>
+
+<div class="faq-content container">
+
+  <div class="faq-question">
+    <input id="q1" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q1" class="panel-title">What is Strinja?</label>
+    <div class="panel-content">Strinja is a company working for art enthusiast. We design different kind of captivating handmade artwork.</div>
+  </div>
+  
+  <div class="faq-question">
+    <input id="q2" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q2" class="panel-title">Can we purchase the artwork ?</label>
+    <div class="panel-content">Yes, You can by contacting us.</div>
+  </div>
+  
+  <div class="faq-question">
+    <input id="q3" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q3" class="panel-title">Can we order Custom art?</label>
+    <div class="panel-content">Yes, You can write to us by mail for you custom art.</div>
+  </div>
+  <div class="faq-question">
+    <input id="q4" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q4" class="panel-title">Why to choose Strinja?</label>
+    <div class="panel-content">Strinja promotes handmade indigenous art inspired by indian culture. Our vision aligns with 'AATMANIRBHAR BHARAT'. </div>
+  </div>
+</div>
+
+<!--speciality-->
+
+
+<section id="features">
+    <div class="container mt-5">
+        <h2 class="pb-2 border-bottom"  style="text-align: center !important; font-weight: bolder;" style="font-size: 42px !important ;">Why Choose Us</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor"
+                        class="bi bi-arrow-through-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l.53-.53c-.771-.802-1.328-1.58-1.704-2.32-.798-1.575-.775-2.996-.213-4.092C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182a21.86 21.86 0 0 1-2.685-2.062l-.539.54V14a.5.5 0 0 1-.146.354l-1.5 1.5Zm2.893-4.894A20.419 20.419 0 0 0 8 12.71c2.456-1.666 3.827-3.207 4.489-4.512.679-1.34.607-2.42.215-3.185-.817-1.595-3.087-2.054-4.346-.761L8 4.62l-.358-.368c-1.259-1.293-3.53-.834-4.346.761-.392.766-.464 1.845.215 3.185.323.636.815 1.33 1.519 2.065l1.866-1.867a.5.5 0 1 1 .708.708L5.747 10.96Z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Promotes Handmade Art.</h3>
+                    <p>Influencing more people towards hand made arts.</p>
+
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor"
+                        class="bi bi-check2-circle" viewBox="0 0 16 16">
+                        <path
+                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                        <path
+                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Captivating Art Pieces.</h3>
+                    <p>Beautiful artworks designed by hand.</p>
+
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-truck"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Fast Delivery</h3>
+                    <p>Accessibility all over world at best price</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <iframe src="footer.html" width="100%" height="288px" frameborder="0" ></iframe>
+    <script src="script.js" defer></script>
+
+
+</body>

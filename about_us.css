@@ -1,0 +1,423 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+.contain{
+    font-family: 'Roboto', sans-serif;
+   
+
+}
+
+
+.header {
+    overflow: hidden;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    padding-right: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+  }
+  
+  .header-right {
+    float: right;
+    margin-top: 17px;
+    transition: transform 0.3s; /* Add transition property for smooth animation */
+  }
+  
+  
+  
+  .header-right a {
+    margin-left: 20px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .header-right a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black; /* Line color on hover */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+    top: 100%;
+    border-radius: 25%;
+  }
+  
+  .header-right a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+  
+  
+  
+  .header a.logo {
+    position:relative;
+    top:0;
+    margin-left: 60px;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      display: none; /* Hide by default */
+      float: right;
+      margin-top: 17px;
+      cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 28%;
+    margin: 6px 0;
+    transition: transform 0.5s; /* Add a transition for smooth animation */
+  }
+  
+  .hamburger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+*{
+font-family: -apple-system, -apple-system,  
+            BlinkMacSystemFont, 'Segoe UI', Roboto,  
+            Oxygen, Ubuntu, Cantarell, 'Open Sans',  
+            'Helvetica Neue', sans-serif;
+}
+@media screen and (max-width:576px) {
+    .header-right {
+        display: none; /* Hide the regular menu items */
+        text-align: center;
+      }
+    
+      .hamburger {
+        display: block; /* Show the hamburger menu icon */
+      }
+
+}
+
+/*CSS OF ABOUT US */
+
+.quote{
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 80px;
+}
+
+#open{
+    position: relative;
+    bottom: 20px;
+    margin-right: 20px;
+    color: rgb(169, 168, 168);
+}
+
+#close{
+    position: relative;
+    bottom: 20px;
+    margin-left: 20px;
+    color: rgb(169, 168, 168);
+}
+
+.quote hr{
+    margin-top: 50px;
+}
+
+.contain {
+    width: 100%;
+}
+
+.contain h1 {
+    font-size: 50px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 5% 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.about .left {
+    padding: 2% 0;
+    float: left;
+    width: 50%;
+    display: inline-block;
+}
+
+.about .right {
+    width: 50%;
+    display: inline-block;
+}
+
+.about .right img {
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+.about .left h1 {
+    text-align: center;
+    color: #070707;
+    margin: 0 0 10px 0;
+}
+
+.about .left hr {
+    width: 20%;
+    margin: auto;
+    border-top: 2px solid #000;
+    border-bottom: none;
+}
+
+.about .left p {
+    font-size: 1rem;
+    margin: 40px auto;
+    width: 80%
+}
+
+.mission {
+    display: flex;
+    padding: 5% 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    align-items: center;
+}
+
+.mission .right {
+    padding: 2% 0;
+    width: 50%;
+    display: inline-block;
+}
+
+.mission .left {
+    float: left;
+    width: 50%;
+    display: inline-block;
+}
+
+.mission .left img {
+    width: 80%;
+    border-radius: 25px;
+    margin-top: 55px;
+    margin-left: 65px;
+    box-shadow: #070707;
+}
+
+.mission .right h1 {
+    text-align: center;
+    color: #060606;
+    margin: 0 0 20px 0;
+}
+
+.mission .right hr {
+    width: 35%;
+    margin: auto;
+    border-top: 2px solid #000;
+    border-bottom: none;
+
+}
+
+
+.mission .right ol {
+    margin-top: 40px;
+}
+
+.mission .right ol li {
+    margin-bottom: 7px;
+}
+
+.about img{
+    object-fit: cover;
+    object-position: center;
+    height: 400px;
+}
+
+.team {
+    width: 90%;
+    margin: auto;
+    padding: 5% 5%;
+    overflow: hidden;
+}
+
+.team h1 {
+    text-align: center;
+    color: #1EADFF;
+
+}
+
+.team h1 hr {
+    max-width: 15%;
+    margin: auto;
+    border-top: 2px solid #000;
+    background-color: transperant;
+    border-bottom: none;
+    margin-bottom: 50px;
+}
+
+.team .card {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    min-width: 20%;
+    height: 500px !important;
+    height: auto;
+    background-color: #fff;
+    display: inline-block;
+    margin: 40px 6.5%;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.card .circle-container {
+    position: relative;
+    background-color: #579f79;
+    width: 250px;
+    height: 250px;
+    border: none;
+    border-radius: 50%;
+    margin: auto;
+    color: #fff;
+}
+
+.circle-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 60px;
+}
+
+.team .card h2 {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.team .card h4 {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.team .card p {
+    width: 250px;
+    margin: 30px auto;
+    text-align: center;
+
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+
+/* media */
+@media(max-width:1200px) {
+    .mission .right p {
+        font-size: .8rem;
+        margin: 20px auto;
+    }
+
+    .about .left p {
+        font-size: .8rem;
+        margin: 20px auto;
+    }
+    .about{
+        display:flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    }
+}
+
+@media(max-width:991px) {
+    .about .left {
+        width: 100%;
+    }
+
+    .about .right {
+        width: 100%;
+    }
+
+    .mission .left {
+        width: 100%;
+    }
+
+    .mission .right {
+        width: 100%;
+    }
+
+    .team .card {
+        width: 40%;
+    }
+
+    .about .right img {
+        height: 70%;
+        width: 70%;
+
+    }
+
+    .mission {
+        flex-direction: column-reverse;
+    }
+
+    .mission .left img {
+        height: 70%;
+        width: 70%;
+        margin-right: 65px;
+    }
+
+
+    .about .right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mission .left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mission .right {
+        text-align: center;
+    }
+
+}
+
+@media(max-width:768px) {
+    .team .card {
+        width: 100%;
+    }
+
+    nav {
+        height: 80px;
+    }
+}

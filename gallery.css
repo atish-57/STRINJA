@@ -1,0 +1,466 @@
+*{
+    font-family: -apple-system, -apple-system,  
+                BlinkMacSystemFont, 'Segoe UI', Roboto,  
+                Oxygen, Ubuntu, Cantarell, 'Open Sans',  
+                'Helvetica Neue', sans-serif;
+    }
+
+
+
+.header {
+    overflow: hidden;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    padding-right: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+  }
+  
+
+  .header-right {
+    float: right;
+    margin-top: 17px;
+    transition: transform 0.3s; /* Add transition property for smooth animation */
+  }
+
+  
+  .header-right a {
+    margin-left: 20px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .header-right a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black; /* Line color on hover */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+    top: 100%;
+    border-radius: 25%;
+  }
+  
+  .header-right a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+  
+  
+  
+  .header a.logo {
+    position:relative;
+    top:0;
+    margin-left: 60px;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      display: none; /* Hide by default */
+      float: right;
+      margin-top: 17px;
+      cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 28%;
+    margin: 6px 0;
+    transition: transform 0.5s; /* Add a transition for smooth animation */
+  }
+  
+  .hamburger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  @media screen and (max-width: 580px) {
+    .header-right {
+      display: none; /* Hide the regular menu items */
+      text-align: center;
+    }
+  
+    .hamburger {
+      display: block; /* Show the hamburger menu icon */
+    }
+  }
+
+
+.whatsapp-icon {
+    position: absolute;
+    top: 97%;
+    z-index: 2;
+    /* Adjust the distance from the bottom */
+    left: 49%;
+    transform: translateX(-50%);
+    color: #1eda63;
+    /* WhatsApp color */
+    font-size: 50px;
+    /* Increased font size */
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    /* Adjust display property */
+}
+.gallery_text{
+    color: white;
+    font-size:7rem;
+    position: relative;
+    bottom: 50px;
+}
+.back-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("gallary.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100vw;
+    
+}
+
+
+
+.whatsapp-icon:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    /* Increase size on hover */
+}
+
+.imp-img {
+    border: 2px solid rgb(155, 152, 155);
+    border-radius: 15px;
+
+    box-shadow: 2px 0 5px rgb(107, 104, 107);
+}
+
+
+
+
+
+
+
+
+
+
+main .text {
+    color: black;
+    font-family: monospace;
+    font-weight: 570;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 2.5%;
+}
+
+main hr {
+    position: relative;
+    bottom: 1%;
+    max-width: 85%;
+    margin: auto;
+    color: black;
+}
+
+#carousel {
+    position: relative;
+    top: 5%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+}
+
+.navbar {
+    position: relative;
+    bottom: 10px;
+}
+
+#carousel div img {
+    width: 280px;
+    transition: width 1s;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgb(128, 125, 126);
+}
+
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+    width: 150px;
+}
+
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+    width: 150px;
+}
+
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+    width: 200px;
+}
+
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+    width: 150px;
+}
+
+#carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+    width: 200px;
+}
+
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+    width: 150px;
+}
+
+/* .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+} */
+/* .buttons {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+} */
+
+
+
+
+.grnereheading {
+    position: relative;
+    top: 1%;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5em;
+    /* Adjust the font size as needed */
+    color: black;
+    /* Set the text color to white or your desired color */
+    text-shadow: 2px 2px 4px rgba(107, 103, 103, 0.5);
+    /* Add a subtle text shadow */
+    animation: slideIn 1s ease-in-out;
+    /* Add a slide-in animation */
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.pbelowheading{
+    text-align: center;
+    margin-top: 1%;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 990px) {
+
+
+
+    .headmain {
+        max-width: 100%;
+        margin: auto;
+    }
+
+
+
+    .img-resp {
+        max-width: 85%;
+        margin: auto;
+        position: relative;
+        left: 24%;
+    }
+
+
+    .inpbar {
+        width: 40%;
+        margin: auto;
+    }
+
+
+
+    .display-5,
+    .lead {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .img-resp {
+        max-width: 85%;
+        margin: auto;
+        position: relative;
+        left: 10%;
+    }
+
+    .display-5,
+    .lead {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width:337px) {
+    .spfont {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+
+    .display-5,
+    .lead {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .container {
+        width: 90wh;
+    }
+
+    #carousel div img {
+        width: 200px;
+    }
+
+    #carousel div.prev img {
+        width: 140px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    #carousel div.prevLeftSecond img {
+        width: 110px;
+        position: relative;
+        top: 1px;
+    }
+
+    #carousel div.next img {
+        width: 140px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    #carousel div.nextRightSecond img {
+        width: 110px;
+        position: relative;
+        top: 1px;
+    }
+
+    .grnereheading {
+        font-size: 2rem;
+
+    }
+
+    .whatsapp-icon {
+        position: absolute;
+        top: 83%;
+        font-size: 40px;
+    }
+
+}
+
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

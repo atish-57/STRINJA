@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="about_us.css">
+
+</head>
+
+</html>
+
+<body>
+
+
+   <!--Header section -->
+
+    <div class="header ">
+      <div class="container">
+      <a href="index.html" class="logo"><img src="logo.png" alt="logo" height="60px" width="60px"></a>
+      <div class="header-right">
+        <a href="index.html">Home</a>
+        <a href="gallery1.html">Gallery</a>
+        <a href="conatctus.html">Contact Us</a>
+        <a href="about_us.html">About </a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    </div>
+    <script>
+    function toggleMenu() {
+      var menu = document.querySelector('.header-right');
+      var hamburger = document.querySelector('.hamburger');
+    
+      menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+      hamburger.classList.toggle('active');
+    }
+    </script>
+
+
+
+    <div class="quote">
+        <p><i class="fa-solid fa-quote-left" id="open"></i>
+        A true artist is not one who is inspired <br> but the one who inpires others
+        <i class="fa-solid fa-quote-right" id="close"></i></p>
+        <hr>
+    </div>
+    <section>
+        <div class="contain">
+            <div class="about">
+                <div class="left">
+                    <h1>About us</h1>
+                    <hr>
+                    <p>I am thrilled to welcome you to the Strinja family, a venture that has been a dream for a
+                        while.
+                        As a
+                        founder, I want to share why we embarked on this journey. Each string of art creates
+                        thousands
+                        of
+                        memories, these arts are generally made by unemployed, uneducated women in rural and urban
+                        areas
+                        with
+                        the help of some engineers.</br> Each customer is helping in women empowerment.
+
+                        With every purchase, you become a crucial part of this narrative, contributing to the
+                        empowerment of these talented women and helping us weave a tapestry of positive change.</br>
+                        At
+                        Strinja,
+                        we
+                        believe that art goes beyond aesthetics; it's a powerful tool for social transformation and
+                        economic
+                        empowerment.</p>
+
+                </div>
+                <div class="right">
+                    <img src="joanna-kosinska-spAkZnUleVw-unsplash.jpg">
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="mission">
+
+                <div class="left">
+                    <img src="ian-schneider-TamMbr4okv4-unsplash.jpg">
+                </div>
+                <div class="right">
+                    <h1>Mission Statement</h1>
+                    <hr>
+                    <ol style="list-style: none;">
+                        <li> Prioritize employment for the uneducated, especially women in
+                            rural and urban areas.</li>
+                        <li>Advocate for handmade arts, influencing a global appreciation for craftsmanship.</li>
+                        <li> Ensure global accessibility all over world at best price
+                            for our handcrafted products.</li>
+                        <li>Embrace sustainable practices, minimizing our environmental impact.</li>
+                        <li>Foster community engagement through workshops, events, and collaborative initiatives.
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="clear"></div>
+
+            </div>
+            <div class="about">
+                <div class="left">
+                    <h1>Vision</h1>
+                    <hr>
+                    <p>To perpetuate the essence of traditional handmade arts, Strinja envisions a sustainable,
+                        eco-friendly
+                        environment.</br> We aspire to create a harmonious blend of cultural preservation, aesthetic
+                        excellence,
+                        and
+                        responsible practices, ensuring that our handcrafted creations not only endure through time
+                        but
+                        also
+                        contribute positively to the world we inhabit.</p>
+
+                </div>
+                <div class="right">
+                    <img src="lidya-nada-tXz6g8JYYoI-unsplash.jpg">
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+
+
+   
+    <iframe src="footer.html" width="100%" height="288px" frameborder="0" ></iframe>
+
+
+
+
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navbar = document.querySelector('.header');
+        const rightnav = document.querySelector('.navbar');
+
+
+        burger.addEventListener('click', () => {
+            navbar.classList.toggle('h-nav');
+            rightnav.classList.toggle('v-class');
+
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>

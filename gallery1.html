@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="gallery.css">
+    
+</head>
+
+<body>
+
+    <div class="header ">
+        <div class="container">
+        <a href="index.html" class="logo"><img src="logo.png" alt="logo" height="60px" width="60px"></a>
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a href="gallery1.html">Gallery</a>
+          <a href="conatctus.html">Contact </a>
+          <a href="about_us.html">About Us</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      </div>
+      <script>
+      function toggleMenu() {
+        var menu = document.querySelector('.header-right');
+        var hamburger = document.querySelector('.hamburger');
+      
+        menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+        hamburger.classList.toggle('active');
+      }
+      </script>
+
+    <div class="back-img">
+        <p class="gallery_text">Gallery</p>
+    </div>
+        
+
+    <div class="px-4 py-5 my-5 text-center" style="background-color:#f2f0f0;">
+        <img class="d-block mx-auto mb-4" src="logo.png" alt="" width="120" height="120">
+            
+        <h1 class="display-5 fw-bold text-body-emphasis">Behind Strinja</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">We at Strinja provide Handmade art of different genre.These art are made by unemployed women of rural area which helps them economically to grow.To order art pieces click on the whatsapp icon below the art piece.</p>
+        </div>
+    </div>
+    <main>
+        <div class="grnereheading">
+            Abstract Collection
+        </div>
+        <p class="pbelowheading">Collection of abstract art pieces</p>
+        <div id="carousel">
+
+            
+
+            <div class="prevLeftSecond">
+                <img src="IMG-20231226-WA0013.jpg">
+                <div class="caption">Black Widow</div>
+                
+            </div>
+
+            <div class="prev">
+                <img src="IMG-20231226-WA0015.jpg">
+                <div class="caption">Chakra</div>
+            </div>
+
+            <div class="selected">
+                <img src="IMG-20231230-WA0009.jpg">
+                <div class="caption">White Widow</div>
+            </div>
+
+            <div class="next">
+                <img src="IMG-20231230-WA0015.jpg">
+                <div class="caption">Jungle King</div>
+            </div>
+
+            <div class="nextRightSecond">
+                <img src="IMG-20231226-WA0014.jpg">
+                <div class="caption">Puppy</div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="grnereheading">
+           Portrait Collection
+           
+        </div>
+        <p class="pbelowheading">Portrait of famous personalities</p>
+        <div id="carousel">
+
+            
+
+            <div class="prevLeftSecond">
+                <img src="IMG-20231226-WA0007.jpg">
+                <div class="caption">Ali khan</div>
+                
+            </div>
+
+            <div class="prev">
+                <img src="IMG-20231226-WA0006.jpg">
+                <div class="caption">Gaurav Thakur</div>
+            </div>
+
+            <div class="selected">
+                <img src="IMG-20231226-WA0003.jpg">
+                <div class="caption">Thomas shelby</div>
+            </div>
+
+            <div class="next">
+                <img src="IMG-20231226-WA0002.jpg">
+                <div class="caption">Albert Einstein</div>
+            </div>
+
+            <div class="nextRightSecond">
+                <img src="IMG-20231230-WA0017.jpg">
+                <div class="caption">Unknown man</div>
+            </div>
+
+        </div>
+      
+        <hr>
+        <div class="grnereheading">
+            Customized Collection
+        </div>
+        <p class="pbelowheading">Collection of customized art pieces</p>
+        <div id="carousel">
+
+           
+
+            <div class="prevLeftSecond">
+                <img src="IMG-20231230-WA0011.jpg">
+                <div class="caption">Baby Portrait</div>
+                
+            </div>
+
+            <div class="prev">
+                <img src="IMG-20231230-WA0012.jpg">
+                <div class="caption">Alphabet-A</div>
+            </div>
+
+            <div class="selected">
+                <img src="IMG-20231230-WA0013.jpg">
+                <div class="caption">Alphabet-O</div>
+            </div>
+
+            <div class="next">
+                <img src="IMG-20231226-WA0012.jpg">
+                
+                <div class="caption">Mother and Child</div>
+            </div>
+
+            <div class="nextRightSecond">
+                <img src="IMG-20231230-WA0010.jpg">
+                <div class="caption">Smiley</div>
+            </div>
+
+            
+
+        </div>
+       
+        <hr>
+    </main>
+
+
+    <div class="grnereheading">
+        New Arrivals
+    </div>
+    <p class="pbelowheading">Checkout our latest collection</p>
+
+    <iframe src="https://script.google.com/macros/s/AKfycbyywiSiU5ScNNxzlgd7bFxgPLJZhoj0un5YjUdY6fVLyfuKFexGo9bIfQb5Jlb6YNKY/exec" width="100%" height="600px" ></iframe>
+    <iframe src="footer.html" width="100%" height="288px" frameborder="0" ></iframe>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="gallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+    
+</body>
+
+</html>

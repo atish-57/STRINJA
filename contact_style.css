@@ -1,0 +1,842 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+
+
+
+*{
+  font-family: -apple-system, -apple-system,  
+              BlinkMacSystemFont, 'Segoe UI', Roboto,  
+              Oxygen, Ubuntu, Cantarell, 'Open Sans',  
+              'Helvetica Neue', sans-serif;
+  }
+
+
+
+.header {
+  overflow: hidden;
+ padding-top: 10px;
+ padding-bottom: 10px;
+  padding-right: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+}
+
+.header-right {
+  float: right;
+  margin-top: 17px;
+  transition: transform 0.3s; /* Add transition property for smooth animation */
+}
+
+
+
+.header-right a {
+  margin-left: 20px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* .header-right a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black; 
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+  top: 100%;
+  border-radius: 25%;
+} */
+
+/* .header-right a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+} */
+
+
+
+.header a.logo {
+  position:relative;
+  top:0;
+  margin-left: 60px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display: none; /* Hide by default */
+    float: right;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: black ;
+  border-radius: 28%;
+  margin: 6px 0;
+  transition: transform 0.5s; /* Add a transition for smooth animation */
+}
+
+.hamburger.active div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+@media screen and (max-width: 580px) {
+  .header-right {
+    display: none; /* Hide the regular menu items */
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger menu icon */
+  }
+}
+
+div {
+}
+/* common */
+section {
+  padding: 20px 0;
+}
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+}
+
+.carousel-item {
+  position: relative;
+}
+.main-img {
+  height: 100vh;
+}
+.flex {
+  flex: 1;
+}
+.arrows a {
+  color: #000;
+  font-family: "PlayFair Display";
+}
+
+/* navbar */
+
+
+
+.section-intro {
+  height: 500px;
+  background: linear-gradient(#00000031, rgba(0, 0, 0, 0.397)),
+    url(wallpaperflare.com_wallpaper\ copy\ 2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+.section-intro-title {
+  font-size: 4em;
+  font-family: "MuseoModerno", cursive;
+  color: #cccccc;
+  position: relative;
+  padding-top: 30px;
+  text-align: center;
+}
+.section-intro-title img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* main-hdng */
+/* form-title for-form */
+/* main-prim-hdg pages-heading */
+/* hdg-blck-1 sections-heading */
+/* link buttons*/
+/* featured-heading inner-items-heading */
+/* slider-heading */
+.main-hdg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(#00000075, #00000069);
+  align-items: left;
+  padding-left: 13%;
+}
+.main-hdg h2 {
+  font-size: 2em;
+  font-family: "Nanum Myeongjo", serif;
+}
+@media only screen and (min-width: 992px) {
+  .main-hdg h2 {
+    font-size: 5em;
+    width: 70%;
+  }
+  .main-hdg {
+    padding-left: 20%;
+  }
+}
+.main-hdg .main-link {
+  position: relative;
+  padding-left: 100px;
+  width: max-content;
+  border-radius: 1.875rem !important;
+  font-size: 12px !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  line-height: 1.2 !important;
+  padding: 1.5835em 3.333em !important;
+  font-weight: 600 !important;
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  letter-spacing: 1px !important;
+  color: #fff !important;
+  height: max-content;
+}
+
+/*  */
+.hdg-blck-1 {
+  position: relative;
+  padding-top: 10px;
+}
+.hdg-blck-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70px;
+  height: 4px;
+  background-color: #c1b086;
+}
+.hdg-blck-1 h3 {
+  font-size: 2em;
+  font-family: "MuseoModerno", cursive;
+}
+.hdg-blck-1 p {
+}
+.hdg-blck-1 h6 {
+  letter-spacing: 2px;
+  font-size: 0.9em;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+/*comp-heading-2  */
+.comp-heading-2 {
+}
+.comp-heading-2-title {
+  font-size: 2em;
+  font-family: "playfair display";
+  margin-bottom: 20px;
+}
+
+/* link-1 */
+
+.link-1 {
+  border-radius: 1.875rem !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  line-height: 1.2 !important;
+  padding: 1.5835em 3.333em !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  letter-spacing: 1px !important;
+  background: #292b2c !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+  width: 200px;
+  height: max-content;
+}
+.link-2 {
+  border-radius: 1.875rem !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  line-height: 1.2 !important;
+  padding: 1.5835em 3.333em !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  letter-spacing: 1px !important;
+  height: max-content;
+  border: thin solid #292b2c !important;
+  color: #292b2c;
+  width: 200px;
+  margin-top: 30px;
+}
+/*  */
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* home-page-room */
+.featured-details .home-page-room {
+  position: relative;
+}
+
+.featured-details .features-block {
+  background-color: #3f9cc1;
+  height: 420px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  top: -80px;
+  justify-content: center;
+  padding: 25px;
+}
+
+@media only screen and (min-width: 992px) {
+  .featured-details .features-block {
+    position: absolute;
+    width: 500px;
+    padding: 50px;
+  }
+  .featured-details .features-block {
+    background-color: #3f9cc1;
+    height: 410px;
+    top: -70px;
+    padding: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .featured-details .features-block {
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    top: -35px;
+    padding: 80px;
+  }
+}
+
+.featured-details .Rblck {
+  right: 50px;
+}
+.featured-details .icon-value-items-wrapper {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .featured-details .icon-value-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.featured-details .icon-value-item {
+  flex-basis: 50%;
+  margin: 10px 0;
+}
+/* room-carousel */
+.rooms-carousel {
+}
+.rooms-carousel .room-item {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  object-fit: cover;
+}
+
+.rooms-carousel .featured-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.63);
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  font-size: 4em;
+  justify-content: center;
+  color: #fff;
+}
+.rooms-carousel .featured-icon i {
+}
+.rooms-carousel .room-item:hover .featured-icon {
+  opacity: 1;
+}
+/* testimonial  */
+.testimo {
+  position: relative;
+}
+.testimo .Lblck {
+  left: 50px;
+}
+.testimo blockquote p i {
+  font-size: 0.8em;
+}
+.testimo blockquote img {
+  width: 50px;
+}
+.testimo .blockquote-footer {
+  display: inline-block !important;
+  color: #e6e6e6 !important;
+}
+
+
+.restuarant .resuartant-types-block {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.restuarant .accordion {
+  width: 100%;
+}
+.restuarant .accrdian-title {
+  color: #292b2c !important;
+}
+.restuarant .card-body {
+  color: #808080;
+  font-size: 0.85em;
+}
+/*  */
+#properties .card-item {
+  background: #e6e6e6;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 2em 0em 2em 2em;
+}
+
+#properties .card-item-body {
+  padding: 1em;
+  position: relative;
+  padding: 3em;
+}
+
+#properties .owl-item {
+  padding: 2em;
+}
+
+#properties .FeaturedImage img {
+  transform: translateX(25px);
+}
+
+#properties .subtitle {
+  position: absolute;
+  color: white;
+  height: 5em;
+  width: 5em;
+  background-color: black;
+  left: -55px;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#properties .title {
+  position: relative;
+}
+
+#properties .title::after {
+  position: absolute;
+  content: "";
+  top: -10px;
+  position: absolute;
+  border-top: 3px solid black;
+  width: 20%;
+  left: 0;
+}
+#properties {
+  position: relative;
+}
+/* About us */
+
+.about-us-page .grid {
+  width: 100%;
+}
+.about-us-page .grid-sizer {
+  width: 33.33%;
+}
+.about-us-page .grid-item {
+  width: 33.33%;
+}
+
+.about-us-page .grid-item {
+  float: left;
+}
+
+.about-us-page .grid-item img {
+  display: block;
+  width: 100%;
+}
+
+.about-us-page .grid1 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-us-page .grid-item1 {
+  width: 320px;
+  height: auto;
+  float: left;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 480px) {
+  .about-us-page .grid-item1 {
+    width: 420px;
+    height: auto;
+    float: left;
+    padding: 5px;
+  }
+}
+
+.about-us-page p {
+  line-height: 1.8;
+  color: #808080;
+  font-size: 0.9em;
+}
+.about-us-page-testimonial {
+  padding: 50px 15px;
+}
+.about-us-page-testimonial .social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.about-us-page-testimonial .social-icons i {
+  color: #292b2c;
+  font-size: 1.5em;
+}
+.about-us-page-testimonial .card {
+  border: none;
+  box-shadow: 0px 0px 35px -24px #000;
+  text-align: center;
+  padding: 10px;
+}
+.about-us-page-testimonial .card-body {
+  padding: 30x 40px;
+}
+.about-us-page-testimonial .card-title {
+  font-family: "MuseoModerno", cursive;
+  margin-bottom: 15px;
+  font-size: 1.5m;
+  color: #292b2c;
+}
+.about-us-page-testimonial .card-subtitle {
+  color: #707070;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 0.8em;
+}
+.about-us-page-testimonial .card-text {
+  line-height: 1.8;
+}
+/*  */
+
+.single-room .amenities {
+  display: none;
+  padding: 30px 0;
+}
+@media (min-width: 768px) {
+  .single-room .amenities {
+    font-family: "Nanum Myeongjo", serif;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.single-room i,
+.allrooms i {
+  color: #292b2c !important;
+  font-size: 0.8em;
+}
+.single-room p {
+  line-height: 1.9;
+}
+.single-rooms-headings {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+  font-size: 1.75em;
+}
+.single-room .icon-key-value {
+  padding: 15px;
+  border-top: thin solid #ebebeb;
+}
+.single-room .icon-key-value {
+  display: flex;
+}
+.single-room .icon-key-value .icon {
+  margin-right: 10px;
+}
+.single-room .icon-key-value .key {
+  margin-right: 30px;
+}
+.review {
+  background: whitesmoke;
+  padding: 20px;
+}
+.review .comment_container {
+}
+.review .comment-text {
+  position: relative;
+  border-left: thin solid #cccccc;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.review .comment-text::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: thin solid #cccccc;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: -10px;
+  transform: rotate(45deg);
+  border-right: 0;
+  border-top: 0;
+  background: white;
+}
+/*  */
+#booking {
+  text-align: center;
+}
+#booking .wpcf7 {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 20px 3px #0000000d;
+  box-shadow: 0 0 20px 3px #0000000d;
+  padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 992px) {
+  #booking .wpcf7 {
+    margin-bottom: 0;
+  }
+}
+#booking .form-title {
+  padding: 50px 0;
+}
+strong {
+  font-size: 2.2em;
+  color: #292b2c !important ;
+}
+#booking .wpcf7-form {
+  padding: 0 1em;
+}
+#booking .wpcf7-form p {
+  width: 100%;
+  padding: 0 1em;
+}
+.stars i {
+  color: rgb(253, 215, 0);
+}
+#booking .wpcf7-form .message {
+  width: 100%;
+}
+
+#booking .wpcf7-form label {
+  width: 100%;
+  position: relative;
+}
+
+#booking .wpcf7-form .message textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #e8e8e8;
+  background-color: #f9f9f9;
+  padding: 2em;
+}
+
+#booking .wpcf7-form p input {
+  height: 50px;
+  color: #24416b;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 1px solid #d1e8f3;
+  width: 100%;
+  position: relative;
+}
+#booking .wpcf7-form label::after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  content: "\f073";
+  font-weight: 400;
+  position: absolute;
+  right: 20px;
+  color: #292b2c;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: max-content;
+}
+/* contact-us */
+#contact-us {
+  padding: 30px 0;
+  transform: translateY(-45px);
+  background-color: #fff;
+  box-shadow: 0px 0px 45px -7px rgb(233, 233, 233);
+}
+#contact-us .wpcf7 {
+  -webkit-box-shadow: 0 0 20px 3px #0000000d;
+  box-shadow: 0 0 20px 3px #0000000d;
+  padding: 30px 10px;
+  padding-top: 50px;
+  margin: 10px auto;
+  background: #fff;
+}
+#contact-us .contact-form-title {
+  font-family: "Nanum Myeongjo", serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 2em;
+}
+@media only screen and (min-width: 992px) {
+  #contact-us .wpcf7 {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+  }
+  #contact-us .wpcf7 {
+    height: 80vh;
+    margin: auto;
+    transform: translateX(70px);
+    z-index: 1;
+    box-shadow: 0 0 20px 3px #0000000d;
+  }
+}
+
+#contact-us .wpcf7-form .message {
+  width: 100%;
+}
+
+#contact-us .wpcf7-form label {
+  width: 100%;
+}
+
+#contact-us .wpcf7-form .message textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #e8e8e8;
+  background-color: #f9f9f9;
+  padding: 2em;
+}
+
+#contact-us .wpcf7-form p input {
+  height: 55x;
+  color: #24416b;
+  border: 1px solid #e8e8e8;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  padding: 10px 20px;
+  width: 100%;
+}
+/* .allrooms */
+.allrooms h5 {
+  font-family: "playFair Display";
+  color: #292b2c;
+}
+.allrooms .price {
+  font-weight: 100;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+/* infpwrapper */
+
+#contact-us .single-contact-info {
+  -webkit-box-shadow: 0 0 20px 3px #0000000d;
+  box-shadow: 0 0 20px 3px #0000000d;
+  background-color: #ffffff;
+  padding: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  height: 200px;
+}
+
+#contact-us .single-contact-info:hover {
+  background-color: #292b2c;
+  color: #fff;
+}
+
+#contact-us .single-contact-info:hover,
+#contact-us .single-contact-info:hover i,
+#contact-us .single-contact-info:hover a {
+  color: #fff;
+}
+
+#contact-us .single-contact-info:nth-last-of-type(-n + 2) {
+}
+
+#contact-us .single-contact-info h6 {
+  font-weight: bold;
+  font-family: "Gilda Display";
+}
+#contact-us .add {
+  height: 100px;
+}
+i {
+  color: #292b2c;
+}
+#contact-us .single-contact-info i {
+  display: block;
+  color: #292b2c;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+#contact-us .single-contact-info a {
+  color: #7a7e9a;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  display: block;
+  font-size: 0.9em;
+}
+/* map */
+
+.map iframe {
+  width: 100%;
+  height: 600px;
+  max-height: 600px;
+}
+
+
+
